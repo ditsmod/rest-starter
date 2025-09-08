@@ -24,12 +24,12 @@
     "node": ">= 20.6.0"
   },
   "dependencies": {
-    "@ditsmod/body-parser": "^3.0.0-alpha.3",
-    "@ditsmod/core": "^3.0.0-alpha.3",
-    "@ditsmod/routing": "^3.0.0-alpha.3"
+    "@ditsmod/body-parser": "^3.0.2-alpha.4",
+    "@ditsmod/core": "^3.0.2-alpha.4",
+    "@ditsmod/rest": "^3.0.2-alpha.4"
   },
   "devDependencies": {
-    "@ditsmod/testing": "^3.0.0-alpha.3",
+    "@ditsmod/testing": "^3.0.2-alpha.4",
     "@eslint/js": "^9.32.0",
     "@types/eslint__js": "^8.42.3",
     "@types/jest": "^30.0.0",

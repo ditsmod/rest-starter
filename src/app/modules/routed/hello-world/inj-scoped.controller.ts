@@ -1,6 +1,6 @@
 import { HTTP_BODY } from '@ditsmod/body-parser';
-import { controller, inject, Res } from '@ditsmod/core';
-import { route } from '@ditsmod/routing';
+import { inject } from '@ditsmod/core';
+import { controller, Res, route } from '@ditsmod/rest';
 
 import { SomeService } from './some.service.js';
 

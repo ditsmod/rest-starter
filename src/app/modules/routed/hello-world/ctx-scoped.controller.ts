@@ -1,5 +1,4 @@
-import { controller, RequestContext } from '@ditsmod/core';
-import { route } from '@ditsmod/routing';
+import { controller, RequestContext, route } from '@ditsmod/rest';
 import { SomeService } from './some.service.js';
 
 @controller({ scope: 'ctx' })

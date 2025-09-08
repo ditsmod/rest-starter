@@ -1,4 +1,5 @@
-import { Injector, Res } from '@ditsmod/core';
+import { Injector } from '@ditsmod/core';
+import { Res } from '@ditsmod/rest';
 import { jest } from '@jest/globals';
 
 import { InjScopedController } from './inj-scoped.controller.js';

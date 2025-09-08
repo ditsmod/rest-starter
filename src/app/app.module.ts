@@ -1,13 +1,13 @@
 import { Providers, rootModule } from '@ditsmod/core';
-import { RoutingModule } from '@ditsmod/routing';
 import { BodyParserConfig, BodyParserModule } from '@ditsmod/body-parser';
 
 import { HelloWorldModule } from './modules/routed/hello-world/hello-world.module.js';
+import { initRest } from '@ditsmod/rest';
 
-@rootModule({
+@initRest({
   appends: [HelloWorldModule],
-  imports: [RoutingModule, BodyParserModule],
-  exports: [RoutingModule, BodyParserModule],
+  imports: [BodyParserModule],
+  exports: [BodyParserModule],
   providersPerApp: new Providers()
     .useLogConfig({ level: 'info' })
     .useValue<BodyParserConfig>(BodyParserConfig, {
@@ -15,4 +15,5 @@ import { HelloWorldModule } from './modules/routed/hello-world/hello-world.modul
       urlencodedOptions: { extended: true },
     }),
 })
+@rootModule()
 export class AppModule {}
