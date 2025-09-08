@@ -1,12 +1,12 @@
 import { Injector, Res } from '@ditsmod/core';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { jest } from '@jest/globals';
 
 import { InjScopedController } from './inj-scoped.controller.js';
 import { SomeService } from './some.service.js';
 
 describe('InjScopedController', () => {
-  const send = vi.fn();
-  const sendJson = vi.fn();
+  const send = jest.fn();
+  const sendJson = jest.fn();
   const res = { send, sendJson } as unknown as Res;
   let injScopedController: InjScopedController;
 

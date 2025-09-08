@@ -1,8 +1,8 @@
 import request from 'supertest';
 import { TestApplication } from '@ditsmod/testing';
 import { HttpServer, Providers, Status } from '@ditsmod/core';
-import { afterAll, beforeAll, describe, it, vi } from 'vitest';
 import { BodyParserConfig } from '@ditsmod/body-parser';
+import { jest } from '@jest/globals';
 
 import { AppModule } from '#app/app.module.js';
 
@@ -11,7 +11,7 @@ describe('Integration tests for HelloWorldController', () => {
   let testAgent: ReturnType<typeof request>;
 
   beforeAll(async () => {
-    vi.restoreAllMocks();
+    jest.restoreAllMocks();
     const providers = new Providers().useValue<BodyParserConfig>(BodyParserConfig, { jsonOptions: { limit: '9b' } });
 
     server = await TestApplication.createTestApp(AppModule, { path: 'api' }).overrideModuleMeta([...providers]).getServer();
