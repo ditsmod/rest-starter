@@ -1,10 +1,10 @@
-import { Providers, rootModule } from '@ditsmod/core';
+import { Providers } from '@ditsmod/core';
+import { restRootModule } from '@ditsmod/rest';
 import { BodyParserConfig, BodyParserModule } from '@ditsmod/body-parser';
 
 import { HelloWorldModule } from './modules/routed/hello-world/hello-world.module.js';
-import { initRest } from '@ditsmod/rest';
 
-@initRest({
+@restRootModule({
   appends: [HelloWorldModule],
   imports: [BodyParserModule],
   exports: [BodyParserModule],
@@ -15,5 +15,4 @@ import { initRest } from '@ditsmod/rest';
       urlencodedOptions: { extended: true },
     }),
 })
-@rootModule()
 export class AppModule {}
