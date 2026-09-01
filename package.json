@@ -25,24 +25,24 @@
     "node": ">= 24.0.0"
   },
   "dependencies": {
-    "@holu/body-parser": "^0.2.2",
-    "@holu/core": "^0.2.2",
-    "@holu/rest": "^0.2.2"
+    "@holu/body-parser": "^0.3.0",
+    "@holu/core": "^0.3.0",
+    "@holu/rest": "^0.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@holu/cli": "^0.2.2",
-    "@holu/rest-testing": "^0.2.2",
+    "@holu/cli": "^0.3.0",
+    "@holu/rest-testing": "^0.3.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^20.19.43",
     "@types/supertest": "^6.0.3",
-    "eslint": "^10.8.1",
-    "jest": "^30.4.2",
+    "eslint": "^10.9.1",
+    "jest": "^30.5.1",
     "prettier": "^3.9.6",
     "rimraf": "^5.0.10",
     "supertest": "^6.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.67.0"
+    "typescript-eslint": "^8.69.0"
   }
 }
